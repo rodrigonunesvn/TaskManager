@@ -17,11 +17,7 @@ Navegue até a pasta raiz do projeto e execute o comando
 docker-compose up --build
 ````
 
-Isso fará com que a API e o banco de dados SQL Server seja iniciados.
-
-Na sequencia, acesse: http://localhost:8080/swagger
-
-Isso iniciará a API e o banco de dados SQL Server. Após a inicialização, a aplicação estará disponível em http://localhost:8080.
+Isso iniciará a API e o banco de dados SQL Server. 
 
 ## Uso da API
 
