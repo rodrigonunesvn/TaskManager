@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TaskManager.Domain.Entities;
+
+namespace TaskManager.Domain.Interfaces
+{
+	public interface IProjectService
+	{
+		Task<IEnumerable<Project>> GetAllProjectsAsync();
+		Task<Project> GetProjectByIdAsync(int projectId);
+		System.Threading.Tasks.Task CreateProjectAsync(Project project);
+		System.Threading.Tasks.Task UpdateProjectAsync(Project project);
+		System.Threading.Tasks.Task DeleteProjectAsync(int projectId);
+	}
+}
