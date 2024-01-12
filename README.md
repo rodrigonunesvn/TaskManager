@@ -1,22 +1,40 @@
 # Task Manager
 
+## Tecnologias Utilizadas
+
+- .NET Core: Para o backend da aplicação.
+- SQL Server: Como sistema de gerenciamento de banco de dados.
+- Docker: Para contêinerização e fácil implantação.
+
+## Instruções de Instalação e Configuração
+Antes de começar, certifique-se de ter o Docker instalado em sua máquina. Clone o repositório para o seu ambiente local usando o Git.
+
 ## Como executar a aplicação
 
-Após clonar o repositório do código-fonte, siga os passos abaixo para iniciar a aplicação:
-
-1. Navegue até a pasta raiz do projeto.
-
-2. Execute o seguinte comando no terminal:
+Navegue até a pasta raiz do projeto e execute o comando
 
 ````bash
 docker-compose up --build
 ````
-Este comando irá iniciar a API e o banco de dados SQL Server.
 
-3. Após a conclusão do processo, acesse a documentação da API através do seguinte link:
-http://localhost:8080/swagger
+Isso fará com que a API e o banco de dados SQL Server seja iniciados.
 
-Agora você está pronto para explorar e utilizar a aplicação.
+Na sequencia, acesse: http://localhost:8080/swagger
+
+Isso iniciará a API e o banco de dados SQL Server. Após a inicialização, a aplicação estará disponível em http://localhost:8080.
+
+## Uso da API
+
+Acesse http://localhost:8080/swagger para visualizar a documentação da API e testar as diferentes rotas e métodos disponíveis.
+
+## Estrutura do Projeto
+
+- TaskManager.API: Contém os controladores e a configuração da API.
+- TaskManager.Application: Camada de serviço que contém a lógica de negócios.
+- TaskManager.Domain: Define os modelos e interfaces usados na aplicação.
+- TaskManager.Infrastructure: Implementa a persistência de dados.
+- TaskManager.Persistence: Configurações de migração e contexto de banco de dados.
+- TaskManager.Testes: Projeto para testes unitários que validam as regras de negócio.
 
 ## Fase 2: O que perguntar para o Product Owner?
 
