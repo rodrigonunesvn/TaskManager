@@ -2,15 +2,21 @@
 
 ## Como executar a aplicação
 
-Após clonar o código fonte, deve-se ir até a pasta raíz e executar o seguinte comando:
+Após clonar o repositório do código-fonte, siga os passos abaixo para iniciar a aplicação:
 
-```bash
-  docker-compose up --build
-```
-    
-Isso fará com que a API e o banco de dados SQL Server seja iniciados.
+1. Navegue até a pasta raiz do projeto.
 
-Na sequencia, acesse: http://localhost:8080/swagger
+2. Execute o seguinte comando no terminal:
+
+````bash
+docker-compose up --build
+````
+Este comando irá iniciar a API e o banco de dados SQL Server.
+
+3. Após a conclusão do processo, acesse a documentação da API através do seguinte link:
+http://localhost:8080/swagger
+
+Agora você está pronto para explorar e utilizar a aplicação.
 
 ## Fase 2: O que perguntar para o Product Owner?
 
